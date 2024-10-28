@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0043A4;
+    color: #fff;
+  }
+  
+  .logo h1 {
+    margin-left: 10px;
+  }
+  
+  .nav a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-btn {
+    background-color: #28C76F;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #e0f7ff;
+    color: #0043A4;
+  }
+  
+  .hero h2 {
+    font-size: 2em;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    color: #0043A4;
+  }
+  
+  .card h3 {
+    font-size: 1.3em;
+    color: #333;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
