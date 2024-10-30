@@ -1,28 +1,46 @@
 import React from "react";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import ContactButton from "@/components/ContactButton";
+import "./InfoBox.css";
 
-<div className="info-box">
-  <h3>Solicite seu Orçamento</h3>
-  <p>
-    Obtenha um orçamento de maneira rápida e simples, entre em contato conosco
-    pelo WhatsApp e detalhe o serviço necessário.
-  </p>
-  <ContactButton bg="#00a859" color="#fff" />
-</div>;
-
-export const Button = ({ label, icon, link, bg, color }) => {
+const InfoBox = ({
+  title,
+  content,
+  showContactButton = false,
+  bg,
+  icon,
+  color,
+  btcolor,
+  btbg,
+}) => {
   return (
-    <a href={link} className="button" style={{ backgroundColor: bg }}>
+    <div className="info-box" style={{ backgroundColor: bg, color: color }}>
       {icon && (
         <Ionicons
-          style={{ marginRight: "8px" }}
+          style={{
+            marginRight: "8px",
+            display: "flex",
+            justifySelf: "flex-start",
+            marginBottom: "12px",
+          }}
           name={icon}
-          size={18}
+          size={48}
           color={color}
         />
       )}
-      <Text style={{ color: color, fontWeight: "bold" }}>{label}</Text>
-    </a>
+      <h3
+        style={{
+          display: "flex",
+          justifySelf: "flex-start",
+          marginBottom: "-8px",
+        }}
+      >
+        {title}
+      </h3>
+      <div>{content}</div>
+      {showContactButton && <ContactButton color={btcolor} bg={btbg} />}
+    </div>
   );
 };
 
-export default Button;
+export default InfoBox;

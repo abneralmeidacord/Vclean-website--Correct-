@@ -1,8 +1,11 @@
+/*index.tsx*/
 import React from "react";
 import ContactButton from "@/components/ContactButton";
-import "./App.css";
+import InfoBox from "@/components/InfoBox";
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { ScrollView, Image } from "react-native";
 import Logo from "@/assets/images/Logo.png";
+import "./App.css";
 
 const App = () => {
   return (
@@ -10,25 +13,11 @@ const App = () => {
       <div className="App">
         <header>
           <Image source={Logo} style={{ maxWidth: 100, maxHeight: 85 }} />
-          <nav>
-            <ul>
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">Sobre Nós</a>
-              </li>
-              <li>
-                <a href="#services">Serviços</a>
-              </li>
-            </ul>
-          </nav>
-          <ContactButton bg="#00a859" color="#fff" />
         </header>
 
         <section className="hero">
           <h1>VCLEAN HIGIENIZAÇÃO</h1>
-          <p>
+          <p className="hero-subtitle">
             A Empresa Nº1 em Higienização e Impermeabilização de Estofados em
             Cláudio
           </p>
@@ -41,27 +30,89 @@ const App = () => {
         </section>
 
         <section className="info-section">
-          <div className="info-box">
-            <h3>Solicite seu Orçamento</h3>
-            <p>
-              Obtenha um orçamento de maneira rápida e simples, entre em contato
-              conosco pelo WhatsApp e detalhe o serviço necessário.
-            </p>
-            <ContactButton bg="#00a859" color="#fff" />
-          </div>
-          <div className="info-box">
-            <h3>Horário de Atendimentos</h3>
-            <p>
-              Segunda à Sex. 08:00h - 18:00h
-              <br />
-              Atendimento no domicílio
-            </p>
-          </div>
-          <div className="info-box">
-            <h3>ENTRE EM CONTATO</h3>
-            <p>Telefone: (37) 99955-0038</p>
-            <ContactButton bg="#00a859" color="#fff" />
-          </div>
+          <InfoBox
+            title="Solicite seu Orçamento"
+            content={
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  marginBottom: "-12px",
+                  marginTop: "10px",
+                }}
+              >
+                <p>
+                  Obtenha um orçamento de maneira rápida e simples, entre em
+                  contato conosco pelo WhatsApp e detalhe o serviço necessário.
+                </p>
+              </div>
+            }
+            color="#1F3B85"
+            icon="wallet-outline"
+          />
+          <InfoBox
+            title="Horário de Atendimentos"
+            color="#fff"
+            bg="#1F3B85"
+            icon="time-outline"
+            content={
+              <>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    marginBottom: "-12px",
+                    marginTop: "10px",
+                  }}
+                >
+                  <Ionicons
+                    style={{ marginRight: "12px" }}
+                    name="calendar"
+                    size="20px"
+                    color="#fff"
+                  />
+                  <p>Segunda à Sex. 08:00h - 18:00</p>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    marginBottom: "-12px",
+                  }}
+                >
+                  <Ionicons
+                    style={{ marginRight: "12px" }}
+                    name="home"
+                    size="20px"
+                    color="#fff"
+                  />
+                  <p>Atendimento no domicílio</p>
+                </div>
+              </>
+            }
+          />
+          <InfoBox
+            title="ENTRE EM CONTATO"
+            content={
+              <div
+                style={{
+                  marginTop: "10px",
+                }}
+              >
+                {" "}
+                <p>Telefone: (37) 99955-0038</p>
+              </div>
+            }
+            showContactButton={true}
+            bg="#00a859"
+            color="#fff"
+            btbg="#fff"
+            btcolor="#00a859"
+            icon="logo-whatsapp"
+          />
         </section>
       </div>
     </ScrollView>
