@@ -1,6 +1,6 @@
-/*index.tsx*/
 import React from "react";
-import ContactButton from "@/components/ContactButton";
+//import ContactButton from "@/components/ContactButton";
+import ContactButton from "@/components/index";
 import InfoBox from "@/components/InfoBox";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { ScrollView, Image } from "react-native";
@@ -114,6 +114,19 @@ const App = () => {
             icon="logo-whatsapp"
           />
         </section>
+
+        <section className="location-section">
+          <div className="location">
+            <h1>Área de atendimento</h1>
+            <p>
+              A VCLEAN HIGIENIZAÇÃO realiza seus atendimentos em domicílio.
+              <br />
+              Atendemos Cláudio e Região
+            </p>
+          </div>
+        </section>
+
+        <section className="FAQ"></section>
       </div>
     </ScrollView>
   );
