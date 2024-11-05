@@ -1,6 +1,6 @@
-/*App.css*/
-html, body {
-  font-family: 'Montserrat', sans-serif;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -8,12 +8,11 @@ html, body {
   width: 100%;
   box-sizing: border-box;
   background-color: #f0f0f0;
-
 }
 
 .App {
   text-align: center;
-  overflow-x: hidden;   
+  overflow-x: hidden;
 }
 
 header {
@@ -29,7 +28,7 @@ header {
 
 .hero {
   position: relative;
-  background-image: url('../assets/images/BANNER.png'); 
+  background-image: url("../assets/images/BANNER.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -39,24 +38,22 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: auto; 
+  height: auto;
   overflow: hidden;
-
 }
 
 .hero h1 {
   font-size: 52px;
   font-weight: bold;
   margin-bottom: -12px;
-  margin-top: -1px
+  margin-top: -1px;
 }
 
-.hero-subtitle {  
+.hero-subtitle {
   font-size: 28px;
   text-align: center;
   font-weight: 550;
-  margin-bottom:  32px
-
+  margin-bottom: 32px;
 }
 
 .hero-description {
@@ -64,7 +61,6 @@ header {
   margin-top: 32px;
   font-weight: 500;
   max-width: 80%;
-  
 }
 
 .info-section {
@@ -73,7 +69,6 @@ header {
   width: 100%;
   overflow-y: auto;
 }
-
 
 .info-box {
   box-sizing: border-box;
@@ -97,7 +92,7 @@ header {
 }
 
 .location-section {
-  width:100%;
+  width: 100%;
   height: auto;
   justify-content: center;
   display: flex;
@@ -106,26 +101,35 @@ header {
 }
 
 .location {
-  width:60%;
+  width: 60%;
   border-radius: 10px;
   height: auto;
-  background-color: #1F3B85;
+  background-color: #1f3b85;
   padding: 25px;
   align-items: center;
   justify-content: center;
 }
 
 .location h1 {
- font-size:32px;
- font-weight: bold;
- color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .location p {
-  font-size:20px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
- }
+}
+
+.faq-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #276796;
+  color: #fff;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
   header {
@@ -146,29 +150,26 @@ header {
   .hero {
     display: block;
     padding: 80px 15px;
-
   }
 
-  
-.info-section {
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.hero-subtitle {
-  font-size: 1.2rem;
-  padding: 0 10px;
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
 
-}
-
-.hero-description {
+  .hero-description {
     width: 100%;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
     font-size: 1rem;
-}
+  }
 
   .info-box {
     width: 90%;
@@ -182,24 +183,33 @@ header {
     width: 100%;
     justify-content: center;
   }
-  
+
   .location {
-    width:90%;
+    width: 90%;
     border-radius: 10px;
     height: auto;
-    background-color: #1F3B85;
+    background-color: #1f3b85;
     padding: 10px 10px;
     align-items: center;
     justify-content: center;
   }
-  
+
   .location h1 {
-   font-size:28px;
-    }
-  
+    font-size: 28px;
+  }
+
   .location p {
-    font-size:16px;
-   }
+    font-size: 16px;
+  }
+
+  .faq-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #1f3b85;
+    color: #fff;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {

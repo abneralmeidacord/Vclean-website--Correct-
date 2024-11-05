@@ -3,7 +3,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import ContactButton from "@/components/ContactButton";
 import "./InfoBox.css";
 
-const InfoBox = ({
+export const InfoBox = ({
   title,
   content,
   showContactButton = false,

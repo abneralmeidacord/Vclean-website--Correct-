@@ -1,9 +1,7 @@
 import React from "react";
-//import ContactButton from "@/components/ContactButton";
-import ContactButton from "@/components/index";
-import InfoBox from "@/components/InfoBox";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import { ScrollView, Image } from "react-native";
+import { ContactButton, InfoBox, FAQDrawer } from "@/components/index";
+import Ionicons from "@expo/vector-icons/Ionicons";
 import Logo from "@/assets/images/Logo.png";
 import "./App.css";
 
@@ -126,7 +124,24 @@ const App = () => {
           </div>
         </section>
 
-        <section className="FAQ"></section>
+        <section>
+          <div className="faq-title">
+            <h1>PERGUNTAS FREQUENTES</h1>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              marginBottom: "25px",
+            }}
+          >
+            <FAQDrawer />
+
+            <Image source={Logo} style={{ maxWidth: 100, maxHeight: 85 }} />
+          </div>
+        </section>
       </div>
     </ScrollView>
   );
