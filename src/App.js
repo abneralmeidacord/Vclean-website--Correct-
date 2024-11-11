@@ -5,7 +5,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import Logo from "./assets/images/Logo.png";
 import "./App.css";
 
-const App = () => {
+export const App = () => {
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <div className="App">
