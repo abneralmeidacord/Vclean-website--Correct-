@@ -1,9 +1,10 @@
 import React from "react";
 import { ScrollView, Image } from "react-native";
 import { ContactButton, InfoBox, FAQDrawer } from "./components/index";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import Logo from "./assets/images/Logo.png";
 import "./App.css";
+import { IonIcon } from "@ionic/react";
+import { home, calendar } from "ionicons/icons";
 
 export const App = () => {
   return (
@@ -65,12 +66,8 @@ export const App = () => {
                     marginTop: "10px",
                   }}
                 >
-                  <Ionicons
-                    style={{ marginRight: "12px" }}
-                    name="calendar"
-                    size="20px"
-                    color="#fff"
-                  />
+                  <IonIcon icon={calendar} size="20px" color="#fff" />
+
                   <p>Segunda à Sex. 08:00h - 18:00</p>
                 </div>
                 <div
@@ -81,12 +78,7 @@ export const App = () => {
                     marginBottom: "-12px",
                   }}
                 >
-                  <Ionicons
-                    style={{ marginRight: "12px" }}
-                    name="home"
-                    size="20px"
-                    color="#fff"
-                  />
+                  <IonIcon icon={home} size="20px" color="#fff" />
                   <p>Atendimento no domicílio</p>
                 </div>
               </>

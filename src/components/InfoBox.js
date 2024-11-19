@@ -1,7 +1,8 @@
 import React from "react";
-import Ionicons from "@expo/vector-icons/Ionicons";
 import ContactButton from "./ContactButton";
 import "./InfoBox.css";
+import { IonIcon } from "@ionic/react";
+
 export const InfoBox = ({
   title,
   content,
@@ -15,14 +16,14 @@ export const InfoBox = ({
   return (
     <div className="info-box" style={{ backgroundColor: bg, color: color }}>
       {icon && (
-        <Ionicons
+        <IonIcon
           style={{
             marginRight: "8px",
             display: "flex",
             justifySelf: "flex-start",
             marginBottom: "12px",
           }}
-          name={icon}
+          icon={icon}
           size={48}
           color={color}
         />

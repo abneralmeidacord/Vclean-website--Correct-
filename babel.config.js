@@ -3,6 +3,8 @@ module.exports = {
     "@babel/preset-env",
     "@babel/preset-react",
     "@babel/preset-typescript",
+    "babel-preset-expo",
+    "@babel/preset-flow",
   ],
   plugins: [
     [
