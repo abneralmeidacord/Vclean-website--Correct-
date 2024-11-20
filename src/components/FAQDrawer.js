@@ -5,11 +5,9 @@ import {
   AccordionDetails,
   Typography,
 } from "@mui/material";
-import { IonIcon } from "@ionic/react";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
-const icon = (
-  <IonIcon icon="chevron-down-outline" size="20px" color="#1d4878" />
-);
+const icon = <Ionicons name="chevron-down-outline" size={18} color="#1d4878" />;
 
 export const FAQDrawer = () => {
   return (
