@@ -1,7 +1,8 @@
 import React from "react";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import ContactButton from "./ContactButton";
+import ContactButton from "@/components/ContactButton";
 import "./InfoBox.css";
+
 export const InfoBox = ({
   title,
   content,

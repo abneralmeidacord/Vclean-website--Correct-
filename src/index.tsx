@@ -1,8 +1,8 @@
 import React from "react";
 import { ScrollView, Image } from "react-native";
-import { ContactButton, InfoBox, FAQDrawer } from "./components/index";
+import { ContactButton, InfoBox, FAQDrawer } from "@/components/index";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Logo from "./assets/images/Logo.png";
+import Logo from "@/assets/images/Logo.png";
 import "./App.css";
 
 const App = () => {
