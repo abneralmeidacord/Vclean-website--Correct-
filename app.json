@@ -4,11 +4,12 @@
     "slug": "Vclean-website",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Logo.png",
+    "assets": ["./assets/images/BANNER.png", "./assets/images/Logo.png"],
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/Logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -26,6 +27,7 @@
       "output": "static",
       "favicon": "./assets/images/Logo.png"
     },
+    "platforms": ["ios", "android", "web"],
     "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true
