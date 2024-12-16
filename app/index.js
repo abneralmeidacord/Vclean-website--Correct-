@@ -3,7 +3,6 @@ import { ScrollView, Image } from "react-native";
 import { ContactButton, InfoBox, FAQDrawer } from "./components/index";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Logo from "./assets/images/Logo.png";
-import Banner from "./assets/images/BANNER.png";
 import "./App.css";
 
 const App = () => {
@@ -14,7 +13,7 @@ const App = () => {
           <Image source={Logo} style={{ maxWidth: 100, maxHeight: 85 }} />
         </header>
 
-        <section className="hero" style={{ backgroundImage: Banner }}>
+        <section className="hero">
           <h1>VCLEAN HIGIENIZAÇÃO</h1>
           <p className="hero-subtitle">
             A Empresa Nº1 em Higienização e Impermeabilização de Estofados em

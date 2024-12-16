@@ -3,13 +3,13 @@
     "name": "Vclean-website",
     "slug": "Vclean-website",
     "version": "1.0.0",
+    "assets": ["./app/favicon.ico"],
     "orientation": "portrait",
-    "icon": "./assets/images/Logo.png",
-    "assets": ["./assets/images/BANNER.png", "./assets/images/Logo.png"],
+    "icon": "./app/favicon.ico",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/Logo.png",
+      "image": "./app/favicon.ico",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,16 +18,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/Logo.png",
+        "foregroundImage": "./app/favicon.ico",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/Logo.png"
+      "output": "static"
     },
-    "platforms": ["ios", "android", "web"],
     "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true
