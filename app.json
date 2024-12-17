@@ -3,7 +3,9 @@
     "name": "Vclean-website",
     "slug": "Vclean-website",
     "version": "1.0.0",
-    "assets": ["./app/favicon.ico"],
+    "assets": [
+      "./app/favicon.ico"
+    ],
     "orientation": "portrait",
     "icon": "./app/favicon.ico",
     "scheme": "myapp",
@@ -26,7 +28,10 @@
       "bundler": "metro",
       "output": "static"
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
     "experiments": {
       "typedRoutes": true
     }
