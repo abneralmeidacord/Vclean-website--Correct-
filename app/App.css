@@ -28,10 +28,6 @@ header {
 
 .hero {
   position: relative;
-  background-image: url("./assets/images/BANNER.png");
-  background-size: cover;
-  background-color: #276796;
-  background-position: center;
   color: #fff;
   padding: 50px 20px;
   text-align: center;

@@ -1,11 +1,13 @@
 import React from "react";
-import { ScrollView, Image } from "react-native";
+import { ScrollView, Image, ImageBackground } from "react-native";
 import { ContactButton, InfoBox, FAQDrawer } from "./components/index";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Logo from "./assets/images/Logo.png";
 import "./App.css";
 
 const App = () => {
+  const bannerImage = require("./assets/images/BANNER.png");
+
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <div className="App">
@@ -13,19 +15,24 @@ const App = () => {
           <Image source={Logo} style={{ maxWidth: 100, maxHeight: 85 }} />
         </header>
 
-        <section className="hero">
-          <h1>VCLEAN HIGIENIZAÇÃO</h1>
-          <p className="hero-subtitle">
-            A Empresa Nº1 em Higienização e Impermeabilização de Estofados em
-            Cláudio
-          </p>
-          <ContactButton bg="#fff" color="#00a859" />
-          <p className="hero-description">
-            A VClean Higienização oferece serviços de limpeza de alta qualidade
-            a clientes e empresas, utilizando produtos profissionais e somos
-            comprometida com a excelência em cada serviço prestado.
-          </p>
-        </section>
+        <ImageBackground
+          source={bannerImage}
+          style={{ width: "100%", height: "auto" }}
+        >
+          <div className="hero">
+            <h1>VCLEAN HIGIENIZAÇÃO</h1>
+            <p className="hero-subtitle">
+              A Empresa Nº1 em Higienização e Impermeabilização de Estofados em
+              Cláudio
+            </p>
+            <ContactButton bg="#fff" color="#00a859" />
+            <p className="hero-description">
+              A VClean Higienização oferece serviços de limpeza de alta
+              qualidade a clientes e empresas, utilizando produtos profissionais
+              e somos comprometida com a excelência em cada serviço prestado.
+            </p>
+          </div>
+        </ImageBackground>
 
         <section className="info-section">
           <InfoBox
